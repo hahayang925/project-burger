@@ -35,7 +35,7 @@ $(document).ready(function(){
 
   //gotop click事件
   $('#go_top').on('click',function(){
-    $('body').animate({scrollTop:0} , 1000);
+    $('html,body').animate({scrollTop:0} , 1000);
   })
 
   //頁面滑動效果
@@ -43,7 +43,7 @@ $(document).ready(function(){
       e.preventDefault();
       var target = $(this).attr('href');
       var targetPos = $(target).offset().top;
-      $('body').animate({scrollTop:targetPos} , 600);
+      $('html,body').animate({scrollTop:targetPos} , 600);
     });
 
 //購物車加入最愛
